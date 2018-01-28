@@ -1,0 +1,17 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Learning nodejs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "author": "arul",
+  "license": "ISC",
+  "dependencies": {
+    "sywac": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  }
+}
