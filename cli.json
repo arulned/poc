@@ -4,9 +4,9 @@
   },
   "commands": [
     {
-      "name": "arulhello",
+      "name": "site-defender",
       "version": "0.1.0",
-      "description": "Test project"
+      "description": "Akamai Security tools for protecting websites."
       }
     ]
 }

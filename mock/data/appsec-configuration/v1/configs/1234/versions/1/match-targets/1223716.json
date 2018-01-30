@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "id": 2001,
+            "name": "2001"
+        }
+    ],
+    "bypassNetworkLists": [],
+    "configId": 17877,
+    "configVersion": 1,
+    "effectiveSecurityControls": {
+        "applyApiConstraints": false,
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "firewallPolicy": {
+        "policyId": "qik1_39797",
+        "policyName": "KOPA",
+        "policySecurityControls": {
+            "applyApiConstraints": false,
+            "applyApplicationLayerControls": true,
+            "applyNetworkLayerControls": true,
+            "applyRateControls": true,
+            "applySlowPostControls": true
+        }
+    },
+    "isTargetSecurityControlsEditable": false,
+    "sequence": 4,
+    "targetId": 1223716,
+    "targetSecurityControls": {
+        "applyApiConstraints": false,
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "type": "api"
+}

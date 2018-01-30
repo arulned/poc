@@ -1,0 +1,47 @@
+{
+    "configId": 1234,
+    "configName": "Clone in subACG",
+    "createDate": 1493317798000,
+    "createdBy": "rpolansk",
+    "links": [
+        {
+            "href": "http:edit.placeholder/url/configs/17877/versions/1",
+            "rel": "edit"
+        },
+        {
+            "href": "http:delete.placeholder/url/configs/17877/versions/1",
+            "rel": "delete"
+        },
+        {
+            "enabled": false,
+            "rel": "expeditedDectivate"
+        },
+        {
+            "enabled": false,
+            "rel": "deactivate"
+        },
+        {
+            "href": "http:createVersionFrom.placeholder/url/configs/17877/versions/1",
+            "rel": "createVersionFrom"
+        },
+        {
+            "href": "http:viewMetadata.placeholder/url/configs/17877/versions/1",
+            "rel": "viewMetadata"
+        },
+        {
+            "href": "http:activate.placeholder/url/configs/17877/versions/1",
+            "rel": "activate"
+        },
+        {
+            "href": "http:expeditedActivate.placeholder/url/configs/17877/versions/1",
+            "rel": "expeditedActivate"
+        }
+    ],
+    "production": {
+        "status": "Inactive"
+    },
+    "staging": {
+        "status": "Inactive"
+    },
+    "version": 1
+}

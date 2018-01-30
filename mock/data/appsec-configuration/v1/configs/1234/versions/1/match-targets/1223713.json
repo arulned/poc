@@ -1,0 +1,42 @@
+{
+    "bypassNetworkLists": [],
+    "configId": 17877,
+    "configVersion": 1,
+    "defaultFile": "NO_MATCH",
+    "effectiveSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": false,
+        "applyRateControls": false,
+        "applySlowPostControls": false
+    },
+    "fileExtensions": [],
+    "filePaths": [
+        "/rewards/*"
+    ],
+    "firewallPolicy": {
+        "policyId": "CRS2_39799",
+        "policyName": "CRS Eval",
+        "policySecurityControls": {
+            "applyApiConstraints": false,
+            "applyApplicationLayerControls": true,
+            "applyNetworkLayerControls": false,
+            "applyRateControls": false,
+            "applySlowPostControls": false
+        }
+    },
+    "hostnames": [
+        "robtest2.akamaifastdnsdemo.com"
+    ],
+    "isNegativeFileExtensionMatch": false,
+    "isNegativePathMatch": false,
+    "isTargetSecurityControlsEditable": true,
+    "sequence": 1,
+    "targetId": 1223713,
+    "targetSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "type": "website"
+}

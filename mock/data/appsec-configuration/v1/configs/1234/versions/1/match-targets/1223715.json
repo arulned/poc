@@ -1,0 +1,42 @@
+{
+    "bypassNetworkLists": [],
+    "configId": 17877,
+    "configVersion": 1,
+    "defaultFile": "NO_MATCH",
+    "effectiveSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": false
+    },
+    "fileExtensions": [],
+    "filePaths": [
+        "/*"
+    ],
+    "firewallPolicy": {
+        "policyId": "RDG8_39798",
+        "policyName": "Redgates site policy",
+        "policySecurityControls": {
+            "applyApiConstraints": false,
+            "applyApplicationLayerControls": true,
+            "applyNetworkLayerControls": true,
+            "applyRateControls": true,
+            "applySlowPostControls": false
+        }
+    },
+    "hostnames": [
+        "*.redgates.com"
+    ],
+    "isNegativeFileExtensionMatch": false,
+    "isNegativePathMatch": false,
+    "isTargetSecurityControlsEditable": true,
+    "sequence": 3,
+    "targetId": 1223715,
+    "targetSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "type": "website"
+}

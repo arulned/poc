@@ -1,0 +1,174 @@
+{
+    "matchTargets": {
+        "apiTargets": [
+            {
+                "apis": [
+                    {
+                        "id": 2001,
+                        "name": "2001"
+                    }
+                ],
+                "bypassNetworkLists": [],
+                "configId": 17877,
+                "configVersion": 1,
+                "effectiveSecurityControls": {
+                    "applyApiConstraints": false,
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "firewallPolicy": {
+                    "policyId": "qik1_39797",
+                    "policyName": "KOPA",
+                    "policySecurityControls": {
+                        "applyApiConstraints": false,
+                        "applyApplicationLayerControls": true,
+                        "applyNetworkLayerControls": true,
+                        "applyRateControls": true,
+                        "applySlowPostControls": true
+                    }
+                },
+                "isTargetSecurityControlsEditable": false,
+                "sequence": 4,
+                "targetId": 1223716,
+                "targetSecurityControls": {
+                    "applyApiConstraints": false,
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "type": "api"
+            }
+        ],
+        "websiteTargets": [
+            {
+                "bypassNetworkLists": [],
+                "configId": 17877,
+                "configVersion": 1,
+                "defaultFile": "NO_MATCH",
+                "effectiveSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": false,
+                    "applyRateControls": false,
+                    "applySlowPostControls": false
+                },
+                "fileExtensions": [],
+                "filePaths": [
+                    "/rewards/*"
+                ],
+                "firewallPolicy": {
+                    "policyId": "CRS2_39799",
+                    "policyName": "CRS Eval",
+                    "policySecurityControls": {
+                        "applyApiConstraints": false,
+                        "applyApplicationLayerControls": true,
+                        "applyNetworkLayerControls": false,
+                        "applyRateControls": false,
+                        "applySlowPostControls": false
+                    }
+                },
+                "hostnames": [
+                    "robtest2.akamaifastdnsdemo.com"
+                ],
+                "isNegativeFileExtensionMatch": false,
+                "isNegativePathMatch": false,
+                "isTargetSecurityControlsEditable": true,
+                "sequence": 1,
+                "targetId": 1223713,
+                "targetSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "type": "website"
+            },
+            {
+                "bypassNetworkLists": [],
+                "configId": 17877,
+                "configVersion": 1,
+                "defaultFile": "NO_MATCH",
+                "effectiveSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "fileExtensions": [],
+                "filePaths": [
+                    "/*"
+                ],
+                "firewallPolicy": {
+                    "policyId": "qik1_39797",
+                    "policyName": "KOPA",
+                    "policySecurityControls": {
+                        "applyApiConstraints": false,
+                        "applyApplicationLayerControls": true,
+                        "applyNetworkLayerControls": true,
+                        "applyRateControls": true,
+                        "applySlowPostControls": true
+                    }
+                },
+                "hostnames": [
+                    "robtest.akamaifastdnsdemo.com"
+                ],
+                "isNegativeFileExtensionMatch": false,
+                "isNegativePathMatch": false,
+                "isTargetSecurityControlsEditable": false,
+                "sequence": 2,
+                "targetId": 1223714,
+                "targetSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "type": "website"
+            },
+            {
+                "bypassNetworkLists": [],
+                "configId": 17877,
+                "configVersion": 1,
+                "defaultFile": "NO_MATCH",
+                "effectiveSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": false
+                },
+                "fileExtensions": [],
+                "filePaths": [
+                    "/*"
+                ],
+                "firewallPolicy": {
+                    "policyId": "RDG8_39798",
+                    "policyName": "Redgates site policy",
+                    "policySecurityControls": {
+                        "applyApiConstraints": false,
+                        "applyApplicationLayerControls": true,
+                        "applyNetworkLayerControls": true,
+                        "applyRateControls": true,
+                        "applySlowPostControls": false
+                    }
+                },
+                "hostnames": [
+                    "*.redgates.com"
+                ],
+                "isNegativeFileExtensionMatch": false,
+                "isNegativePathMatch": false,
+                "isTargetSecurityControlsEditable": true,
+                "sequence": 3,
+                "targetId": 1223715,
+                "targetSecurityControls": {
+                    "applyApplicationLayerControls": true,
+                    "applyNetworkLayerControls": true,
+                    "applyRateControls": true,
+                    "applySlowPostControls": true
+                },
+                "type": "website"
+            }
+        ]
+    }
+}

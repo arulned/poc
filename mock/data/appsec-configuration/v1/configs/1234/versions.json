@@ -1,0 +1,97 @@
+{
+    "configId": 1234,
+    "configName": "Clone in subACG",
+    "lastCreatedVersion": 2,
+    "links": [{
+        "href": "/appsec-configuration/v1/configs/17877/versions?page=1&pagesize=1",
+        "rel": "self"
+    }],
+    "page": 1,
+    "pageSize": 2,
+    "totalSize": 2,
+    "versionList": [{
+            "links": [{
+                    "enabled": false,
+                    "rel": "expeditedDectivate"
+                },
+                {
+                    "href": "http:delete.placeholder/url/configs/17877/versions/1",
+                    "rel": "delete"
+                },
+                {
+                    "href": "http:activate.placeholder/url/configs/17877/versions/1",
+                    "rel": "activate"
+                },
+                {
+                    "href": "http:expeditedActivate.placeholder/url/configs/17877/versions/1",
+                    "rel": "expeditedActivate"
+                },
+                {
+                    "href": "http:edit.placeholder/url/configs/17877/versions/1",
+                    "rel": "edit"
+                },
+                {
+                    "href": "http:createVersionFrom.placeholder/url/configs/17877/versions/1",
+                    "rel": "createVersionFrom"
+                },
+                {
+                    "enabled": false,
+                    "rel": "deactivate"
+                },
+                {
+                    "href": "http:viewMetadata.placeholder/url/configs/17877/versions/1",
+                    "rel": "viewMetadata"
+                }
+            ],
+            "production": {
+                "status": "Inactive"
+            },
+            "staging": {
+                "status": "Inactive"
+            },
+            "version": 1
+        },
+        {
+            "links": [{
+                    "enabled": false,
+                    "rel": "expeditedDectivate"
+                },
+                {
+                    "href": "http:delete.placeholder/url/configs/17877/versions/1",
+                    "rel": "delete"
+                },
+                {
+                    "href": "http:activate.placeholder/url/configs/17877/versions/1",
+                    "rel": "activate"
+                },
+                {
+                    "href": "http:expeditedActivate.placeholder/url/configs/17877/versions/1",
+                    "rel": "expeditedActivate"
+                },
+                {
+                    "href": "http:edit.placeholder/url/configs/17877/versions/1",
+                    "rel": "edit"
+                },
+                {
+                    "href": "http:createVersionFrom.placeholder/url/configs/17877/versions/1",
+                    "rel": "createVersionFrom"
+                },
+                {
+                    "enabled": false,
+                    "rel": "deactivate"
+                },
+                {
+                    "href": "http:viewMetadata.placeholder/url/configs/17877/versions/1",
+                    "rel": "viewMetadata"
+                }
+            ],
+            "production": {
+                "status": "Inactive"
+            },
+            "staging": {
+                "status": "Inactive"
+            },
+            "version": 2
+        }
+    ]
+}

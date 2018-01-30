@@ -1,0 +1,9 @@
+{
+    "hostnameList": [{
+            "hostName": "www.test1.com"
+        },
+        {
+            "hostName": "www.test2.com"
+        }
+    ]
+}

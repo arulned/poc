@@ -1,0 +1,55 @@
+{
+    "bypassNetworkLists": [],
+    "configId": 17877,
+    "configVersion": 1,
+    "defaultFile": "NO_MATCH",
+    "effectiveSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "fileExtensions": [],
+    "filePaths": [
+        "/*"
+    ],
+    "firewallPolicy": {
+        "policyId": "qik1_39797",
+        "policyName": "KOPA",
+        "policySecurityControls": {
+            "applyApiConstraints": false,
+            "applyApplicationLayerControls": true,
+            "applyNetworkLayerControls": true,
+            "applyRateControls": true,
+            "applySlowPostControls": true
+        }
+    },
+    "hostnames": [
+        "robtest.akamaifastdnsdemo.com"
+    ],
+    "isNegativeFileExtensionMatch": false,
+    "isNegativePathMatch": false,
+    "isTargetSecurityControlsEditable": false,
+    "sequence": 2,
+    "targetId": 1223714,
+    "targetSecurityControls": {
+        "applyApplicationLayerControls": true,
+        "applyNetworkLayerControls": true,
+        "applyRateControls": true,
+        "applySlowPostControls": true
+    },
+    "type": "website",
+    "validations": {
+        "errors": [],
+        "notices": [],
+        "warnings": [
+            {
+                "detail": "The selected firewall policy contains rate policies that have a client identifier of 'API Key'. This client identifier should not be used with website targets.",
+                "fieldName": "firewallPolicy",
+                "jsonReference": "#/firewallPolicy",
+                "title": "Incompatible field",
+                "type": "/appsec-configuration/problem-types/INCOMPATIBLE-FIELD"
+            }
+        ]
+    }
+}

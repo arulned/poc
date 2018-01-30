@@ -1,0 +1,18 @@
+{
+    "configId": 1234,
+    "policies": [
+        {
+            "policyId": "qik1_39797",
+            "policyName": "KOPA"
+        },
+        {
+            "policyId": "RDG8_39798",
+            "policyName": "Redgates site policy"
+        },
+        {
+            "policyId": "CRS2_39799",
+            "policyName": "CRS Eval"
+        }
+    ],
+    "version": 1
+}
