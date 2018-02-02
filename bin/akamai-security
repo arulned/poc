@@ -3,10 +3,24 @@
 "use strict";
 
 var ApiService = require("../appSecConfigService");
-
+var fs = require("fs");
 var apiService = new ApiService();
 
 require("sywac")
+  .command("create",{
+    desc:"Create config",
+    setup: sywac => {
+      sywac.file("--file <file>", {
+          desc: "Configuration details in json format, to create.",
+          group: "Options:",
+          required: true
+      });
+    },
+    run: options => {
+      var contents = fs.readFileSync(options.file, "utf8");
+      console.log(contents);
+    }
+  })
   .command("versions", {
       desc:"List all versions",
       setup: sywac => {
