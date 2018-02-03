@@ -1,32 +1,40 @@
 /* global describe it before*/
-//var expect = require("chai").expect;
-//var sinon = require("sinon");
+var chai = require('chai');
+var expect = chai.expect;
+
+var chaiAsPromised = require('chai-as-promised');
+chai.use(chaiAsPromised);
 var AppSecConfig = require("../appSecConfig");
 var nock = require("nock");
 
-describe("AppSecConfig.configs()", function () {
-  var twitstat = new AppSecConfig();
-  var scope;
+describe("AppSecConfig get configurations", function () {
+  var appSecConfig = new AppSecConfig();
+  /* Mock the HTTPS call */
   before(function () {
-    scope = nock(/.*.akamaiapis.net/)
+    nock(/.*.akamaiapis.net/)
                 .get('/v1/configs')
-                .reply(200, { hello: 'worldeeee' });
+                .reply(200, [{ configId: 1234 },{ configId: 5678 }]);
   });
 
-  it(" should return all configuration", function () {
+  it("success resp should return all configuration", function () {
+    let resultPromise = appSecConfig.configs();
+    return expect(resultPromise).to.eventually.deep.equal([1234,5678]);
+  });
+});
 
-    //var expectedEndpoint = "/v1/configs";
-    // var body = JSON.stringify({
-    //   count: 9,
-    //   url: "http://some-url.com/"
-    // });
-    
-    //edgegrid.onFirstCall().returns(body);
-    twitstat.configs(function(resp){
-      console.log('==='+JSON.stringify(resp));
+describe("AppSecConfig get configurations", function () {
+  var appSecConfig = new AppSecConfig();
+  /* Mock the HTTPS call */
+  before(function () {
+    nock(/.*.akamaiapis.net/)
+                .get('/v1/configs')
+                .replyWithError({detail:"Some Error"});
+  });
+
+  it("serror resp hould show error message", function () {
+    let resultPromise = appSecConfig.configs();
+    resultPromise.catch(err=>{
+      expect(err).to.equal("Could not get configurations at this time.");
     });
-
-    console.log(scope.isDone());
-    //expect(result).to.equal(11);
   });
 });

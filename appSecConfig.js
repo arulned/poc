@@ -6,7 +6,7 @@ require("string-format");
 const winston = require("winston");
 
 var logger = new winston.Logger({
-  level: process.env.LOG_LEVEL ? process.env.LOG_LEVEL : "debug",
+  level: process.env.LOG_LEVEL ? process.env.LOG_LEVEL : "error",
   transports: [
     new winston.transports.Console()
   ]
@@ -20,10 +20,10 @@ class AppSecConfig {
   constructor(auth) {
     this._edge = new Edge(auth);
   }
-  
+
   _getConfigId(configId) {
-    if(!configId) {
-      if(this.configs().length == 1) {
+    if (!configId) {
+      if (this.configs().length == 1) {
         configId = this.configs()[0].id;
       } else {
         throw "You have more than one configuration. Please provide a configuration id to work with.";
@@ -31,16 +31,25 @@ class AppSecConfig {
     }
   }
 
-  configs(callback) {
-      logger.debug("Versions API: " + GET_CONFIGS);
-      let request = {
-        method: "GET",
-        path: GET_CONFIGS,
-        followRedirect: false
-      };
-      this._edge.get(request).then(response=>{
-        callback(response);
+  configs() {
+    logger.debug("Versions API: " + GET_CONFIGS);
+    let request = {
+      method: "GET",
+      path: GET_CONFIGS,
+      followRedirect: false
+    };
+    return new Promise((resolve, reject) => {
+      this._edge.get(request).then(response => {
+        var configIds = [];
+        for (let i = 0; i < response.length; i++) {
+          configIds.push(response[i].configId);
+        }
+        resolve(Promise.resolve(configIds));
+      }).catch(err => {
+        reject(err);
       });
+    });
+
   }
 
   versions(providedConfigId) {

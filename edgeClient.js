@@ -4,7 +4,7 @@ var EdgeGrid = require("edgeGrid");
 const winston = require("winston");
 
 var logger = new winston.Logger({
-  level: process.env.LOG_LEVEL ? process.env.LOG_LEVEL : "debug",
+  level: process.env.LOG_LEVEL ? process.env.LOG_LEVEL : "error",
   transports: [
     new winston.transports.Console()
   ]
@@ -32,6 +32,7 @@ class Edge {
         return new Promise((resolve,reject)=>{
           this._edge.auth(request);
           this._edge.send(function (data, response) {
+            logger.debug("Response from server: "+JSON.stringify(response));
             if (response && response.statusCode >= 200 && response.statusCode < 400) {
               resolve(JSON.parse(response.body));
             } else { 
