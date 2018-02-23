@@ -6,7 +6,7 @@
     {
       "name": "security",
       "version": "0.1.0",
-      "description": "Akamai Security tools for protecting websites."
+      "description": "Security tools for protecting websites."
       }
     ]
 }
